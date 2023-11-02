@@ -1,0 +1,132 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.container {
+    display: flex;
+    position: relative;
+    background: url(Img/bg8.jpg);
+    /* background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.box1{
+    /* background-color: antiquewhite; */
+    height: 100vh;
+    width: 300vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items:center;
+    
+}
+.box2{
+    display: flex;
+    background-color: rgb(173, 45, 45);
+    height: 100vh;
+    width: 300vh;
+    justify-content: center;
+    align-items: center;
+}
+.temperature-converter{
+    background-color: #fff;
+    /* background-color: rgb(253, 253, 253); 
+  background-color: rgba(255, 255, 255, 0.4); */
+    min-width: 320px;
+    padding: 20px 25px 45px;
+    border-radius: 5px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: -5px -5px 250px 0 rgba(12, 11, 11, 0.02) inset;
+   
+}
+.mobile{
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.title{
+    color: #222;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.result{
+    text-align: center;
+    margin: 20px 0;
+}
+
+.result-heading{
+    color: #555;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.celsius-value{
+    border-bottom: 2px solid #ccc;
+    padding: 10px;
+    transition: all .45s ease;
+}
+
+.degree-type{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.degree-field{
+    display: flex;
+    flex-direction: column;
+    width: 46%;
+}
+
+label{
+    color: #555;
+    font-size: .96rem;
+    margin-bottom: 5px;
+}
+
+input,select{
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom:2px solid #ccc ;
+    padding: 8px;
+    margin-bottom: 15px;
+}
+
+input:focus{
+    border: 1px solid #4c49f3;
+}
+
+#convert-btn{
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background: linear-gradient(to bottom, #3633f3, #120fb9);
+    color: #f6f6f6;
+    padding: 12px 80px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    transition: all .3s ease-in;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+#convert-btn:hover{
+    background: linear-gradient(to bottom, #4a47e7, #322fda);
+}
+
+.fa{
+    margin-left: -12px;
+    margin-right: 8px;
+}
